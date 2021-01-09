@@ -4,11 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Cypress Schematic (Removes Protractor and adds Cypress configured with TypeScript)
 
-ng add @briebug/cypress-schematic
+- Run command `ng add @briebug/cypress-schematic`
 
 https://www.npmjs.com/package/@briebug/cypress-schematic
 
 # Storybook
+
+- Run command `npx sb init`
+
+## Helpful Links
 
 https://storybook.js.org/docs/angular/get-started/install
 

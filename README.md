@@ -12,6 +12,12 @@ https://www.npmjs.com/package/@briebug/cypress-schematic
 
 - Run command `npx sb init`
 
+# Material
+
+- Run command `ng add @angular/material`
+
+- https://fireship.io/courses/angular/app-material/ (shows custom theme too)
+
 ## Helpful Links
 
 https://storybook.js.org/docs/angular/get-started/install

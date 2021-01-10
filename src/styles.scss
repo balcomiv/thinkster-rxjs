@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -12,21 +11,59 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$thinkster-rxjs-primary: mat-palette($mat-indigo);
-$thinkster-rxjs-accent: mat-palette($mat-pink, A200, A100, A400);
+$custom-orange: (
+  50: #fff3e0,
+  100: #ffe0b2,
+  200: #ffcc80,
+  300: #ffb74d,
+  400: #ffa726,
+  500: #ff9800,
+  600: #fb8c00,
+  700: #f57c00,
+  800: #ef6c00,
+  900: #e65100,
+  A100: #ffd180,
+  A200: #ffab40,
+  A400: #ff9100,
+  A700: #ff6d00,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: white,
+  ),
+);
+
+$thinkster-rxjs-primary: mat-palette($custom-orange);
+// $thinkster-rxjs-primary: mat-palette($mat-indigo);
+
+$thinkster-rxjs-accent: mat-palette($mat-blue-grey, A200, A100, A400);
+// $thinkster-rxjs-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $thinkster-rxjs-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$thinkster-rxjs-theme: mat-light-theme((
-  color: (
-    primary: $thinkster-rxjs-primary,
-    accent: $thinkster-rxjs-accent,
-    warn: $thinkster-rxjs-warn,
+$thinkster-rxjs-theme: mat-light-theme(
+  (
+    color: (
+      primary: $thinkster-rxjs-primary,
+      accent: $thinkster-rxjs-accent,
+      warn: $thinkster-rxjs-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -35,5 +72,11 @@ $thinkster-rxjs-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

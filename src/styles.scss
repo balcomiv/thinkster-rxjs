@@ -44,17 +44,21 @@ $custom-orange: (
   ),
 );
 
-$thinkster-rxjs-primary: mat-palette($custom-orange);
+$thinkster-rxjs-primary: mat-palette($mat-blue, 600);
+// $thinkster-rxjs-primary: mat-palette($custom-orange);
 // $thinkster-rxjs-primary: mat-palette($mat-indigo);
 
-$thinkster-rxjs-accent: mat-palette($mat-blue-grey, A200, A100, A400);
+$thinkster-rxjs-accent: mat-palette($mat-blue-grey);
+// $thinkster-rxjs-accent: mat-palette($mat-blue-grey, A200, A100, A400);
 // $thinkster-rxjs-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$thinkster-rxjs-warn: mat-palette($mat-red);
+$thinkster-rxjs-warn: mat-palette($mat-deep-orange);
+// $thinkster-rxjs-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
+// $thinkster-rxjs-theme: mat-dark-theme($thinkster-rxjs-primary, $thinkster-rxjs-accent, $thinkster-rxjs-warn);
 $thinkster-rxjs-theme: mat-light-theme(
   (
     color: (

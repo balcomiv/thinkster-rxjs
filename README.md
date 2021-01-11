@@ -41,8 +41,12 @@ https://storybook.js.org/docs/angular/writing-stories/introduction
 
 - https://github.com/labs42io/clean-code-typescript#testing
 
-##
+## Another Material Layout and Theming Example
 
 - [Continuous Integration for Angular and Firebase](https://blog.cloudboost.io/continuous-integration-for-angular-and-firebase-809507053058)
 
 - [Repo for Link Above](https://github.com/crh225/angular-github-issues/tree/master/apps/angular-github-issues/src)
+
+## Rxjs Dev Website Layout with Material
+
+- https://github.com/angular/angular/blob/master/aio/src/app/app.component.html
